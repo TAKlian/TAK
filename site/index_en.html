@@ -4,33 +4,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>塔克链</title>
+    <title>TAKLink</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="keywords" content="塔克链">
     <meta name="description" content="塔克链">
-    <link rel="shortcut icon" href="statics/images/logo.png">
+    <link rel="shortcut icon" href="../statics/images/logo.png">
     <!-- Using only with Flat-UI (free)-->
-    <link rel="stylesheet" href="statics/index/developer/common-files/css/icon-font.css">
+    <link rel="stylesheet" href="../statics/index/developer/common-files/css/icon-font.css">
     <!-- end -->
-    <link rel="stylesheet" href="statics/style/hk.css" type="text/css">
+    <link rel="stylesheet" href="../statics/style/hk.css" type="text/css">
 
-    <link rel="stylesheet" href="statics/style/style.css">
-    <link rel="stylesheet" href="statics/css/reset.css">
-    <link rel="stylesheet" href="statics/index/developer/samples/sample-02/css/style.css">
-    <link rel="stylesheet" href="statics/index/developer/samples/sample-05/css/style.css">
-    <link rel="stylesheet" href="statics/layui/css/layui.css">
-    <script src="statics/layui/js/layui.js"></script>
-    <link rel="stylesheet" href="statics/css/swiper.min.css">
-    <link rel="stylesheet" href="statics/css/indexV2.css">
-    <script type="text/javascript" src="statics/js/three.min.js"></script>
+    <link rel="stylesheet" href="../statics/style/style.css">
+    <link rel="stylesheet" href="../statics/css/reset.css">
+    <link rel="stylesheet" href="../statics/index/developer/samples/sample-02/css/style.css">
+    <link rel="stylesheet" href="../statics/index/developer/samples/sample-05/css/style.css">
+    <link rel="stylesheet" href="../statics/layui/css/layui.css">
+    <script src="../statics/layui/js/layui.js"></script>
+    <link rel="stylesheet" href="../statics/css/swiper.min.css">
+    <link rel="stylesheet" href="../statics/css/indexV2.css">
+    <script type="text/javascript" src="../statics/js/three.min.js"></script>
 
-    <script type="text/javascript" src="statics/js/dat.gui.min.js"></script>
+    <script type="text/javascript" src="../statics/js/dat.gui.min.js"></script>
 
-    <script type="text/javascript" src="statics/js/Stats.min.js"></script>
-    <script src="statics/js/jquery-1.8.3.min.js"></script>
-    <script src="statics/js/index.js"></script>
+    <script type="text/javascript" src="../statics/js/Stats.min.js"></script>
+    <script src="../statics/js/jquery-1.8.3.min.js"></script>
+    <script src="../statics/js/index.js"></script>
     <script>
         function chargeBrowser(args) {
             var info = window.navigator.userAgent;
@@ -63,7 +63,7 @@
             if (browser.indexOf(mobileAgent[i]) != -1) {
                 isMobile = true;
                 //alert(mobileAgent[i]);
-                location.href = './wap/index.html';
+                location.href = '../wap/index_en.html';
                 break;
             }
         }
@@ -74,13 +74,17 @@
     <header>
         <ul>
             <li>
-                <a href="index.html"><img src="statics/images/newPage/logo1.png" alt=""></a>
+                <a href="./index_en.html"><img src="../statics/images/newPage/logo1.png" alt=""></a>
             </li>
             <li>
-                <a href="#about">关于</a>
-                <a href="./site/teamV2.html">团队</a>
-                <a href="./statics/塔克链白皮书.pdf">白皮书</a>
+                <a href="./index_en.html">Home</a>
+                <a href="./teamV2_en.html">Team</a>
+                <a href="../statics/塔克链白皮书.pdf">White Paper</a>
             </li>
+            <select name="language" style="background-color: #fff;" onchange="window.location=this.value;">
+                <option value="./index_en.html">English</option>
+                <option value="../index.html">中文</option>
+            </select>
         </ul>
     </header>
 
@@ -88,7 +92,7 @@
 
     <!-- 内容区域 -->
     <div class="main_content">
-        <script src="statics/js/swiper.min.js"></script>
+        <script src="../statics/js/swiper.min.js"></script>
         <style>
             body {
                 background-color: #ffffff;
@@ -247,20 +251,21 @@
             }
             
             .technology>ul li>div img {
-                margin: 45px 0;
+                margin-top: 45px;
+                margin-bottom: 30px;
                 width: 40%;
             }
             
             .technology>ul li>div h6 {
-                font-size: 26px;
+                font-size: 19px;
                 color: rgb(80, 198, 226);
             }
             
             .technology>ul li>div section {
-                font-size: 14px;
+                font-size: 11px;
                 line-height: 20px;
                 padding: 0 30px;
-                margin-top: 20px;
+                /* margin-top: 20px; */
                 color: #fff;
             }
             
@@ -400,13 +405,13 @@
             
             .team_list .swiper-button-prev,
             .swiper-container-rtl .swiper-button-next {
-                background-image: url('./statics/images/newPage/13.png');
+                background-image: url('../statics/images/newPage/13.png');
                 left: 0;
             }
             
             .team_list .swiper-button-next,
             .swiper-container-rtl .swiper-button-prev {
-                background-image: url('./statics/images/newPage/12.png');
+                background-image: url('../statics/images/newPage/12.png');
                 right: 0;
             }
             
@@ -449,12 +454,12 @@
             
             .run_box .swiper-button-prev,
             .swiper-container-rtl .swiper-button-next {
-                background-image: url('./statics/images/newPage/9.png');
+                background-image: url('../statics/images/newPage/9.png');
             }
             
             .run_box .swiper-button-next,
             .swiper-container-rtl .swiper-button-prev {
-                background-image: url('./statics/images/newPage/8.png');
+                background-image: url('../statics/images/newPage/8.png');
             }
             
             .run_box .swiper-button-next,
@@ -483,85 +488,84 @@
             <!-- <div id="bodymovin"></div> -->
             <div id="WebGL-output"></div>
             <div class="index_top_center">
-                <p class="index_top_title">塔克链</p>
+                <p class="index_top_title">TAKLink</p>
             </div>
             <!-- <span class="left_tips">Consensus/Ecology</span> -->
             <!-- <span class="right_tips">Block Chain/Tech</span> -->
         </div>
         <!-- about -->
         <a class="about" name='about'>
-            <img src="statics/images/newPage/1.png" alt="" class="top_left">
-            <h6 class="index_title">关于 <span>01</span></h6>
+            <img src="../statics/images/newPage/1.png" alt="" class="top_left">
+            <h6 class="index_title">About <span>01</span></h6>
             <article>
-                <h5>塔克链介绍 </h5>
+                <h5>TAkLink brief introduction </h5>
                 <section>
-                    全球物联网应用增长区势明显，万物互联时代开启。全球新一轮科 技革命和产业变革正在孕育兴起，信息通信技术以前所未有的速度转化为 现实生产力，深刻改变着全球经济格局、利益格局、安全格局。物联网作 为信息通信技术的典型代表，在全球范围内呈现加速发展的态势。
+                    The application growth area of the global Internet of things is obvious, and the era of Internet of things is open. A new round of global scientific and technological revolution and industrial transformation are emerging. Information and communication
+                    technology is transforming into real productivity at an unprecedented speed, profoundly changing the global economic pattern, interest pattern and security pattern. As a typical representative of information and communication technology,
+                    the Internet of things is developing rapidly all over the world.
                 </section>
             </article>
-            <img src="statics/images/newPage/2.png" alt="" class="bottom_right">
+            <img src="../statics/images/newPage/2.png" alt="" class="bottom_right">
         </a>
         <!-- technology -->
         <a class="technology" name="technology">
-            <h6 class="index_title" style="text-align: left;">核心 <span>02</span></h6>
+            <h6 class="index_title" style="text-align: left;">Core <span>02</span></h6>
             <ul>
                 <li>
                     <div style="background-color: #e2e2e2;">
-                        <img src="./statics/images/newPage/D_01.png" alt="">
-                        <h6 style="color:#000"> 公平、透明、开放和自治</h6>
-                        <section style="color:#797979">
-                            区块链技术和思想的引入，可以让所有机构或个人在无须任何中心 机构背书的前提下公平地参与到物联数据的收集共享和开放运动中来。所 有的机构或个人只需认同这些基于密码学和数据的规则，即可加入到万物 互联数据开放平台中，成为 TAK DATA LINK（塔克链）上的一个节点， 数据平台的开放、交易或使用，没有任何人可以掌控。 </section>
+                        <img src="../statics/images/newPage/D_01.png" alt="">
+                        <h6 style="color:#000"> Fairness, transparency, openness and autonomy</h6>
+                        <section style="color:#797979;">
+                            With the introduction of blockchain technology and ideas, all institutions or individuals can fairly participate in the collection, sharing and open movement of IOT data without any endorsement of central institutions. All institutions or individuals
+                            can join the open data platform of Internet of all things and become a node of Tak data link just by identifying these rules based on cryptography and data. No one can control the opening, trading or use of the data platform.
+                        </section>
                     </div>
-                    <img src="./statics/images/newPage/4.png" alt="">
+                    <img src="../statics/images/newPage/4.png" alt="">
                 </li>
                 <li>
                     <div style="background-color: #6e489a;">
-                        <img src="./statics/images/newPage/D_02.png" alt="">
-                        <h6> 数据可确权、可溯源</h6>
-                        <section>
-                            通过区块链的分布式账本，能够安全透明地记录所有数据上传、更 新、交易或使用行为，这些行为记录一经确认就不可被篡改，使得开放平 台上的所有数据具有可确权、可溯源的功能。 </section>
+                        <img src="../statics/images/newPage/D_02.png" alt="">
+                        <h6> Data can be identified and traceable</h6>
+                        <section style="margin-top: 40px;">
+                            Through the blockchain's distributed ledger, all data upload, update, transaction or use behaviors can be recorded safely and transparently. Once confirmed, these behavior records cannot be tampered with, which makes all data on the open platform have
+                            the function of confirming rights and traceability. </section>
                     </div>
-                    <img src="./statics/images/newPage/5.png" alt="">
+                    <img src="../statics/images/newPage/5.png" alt="">
                 </li>
                 <li>
                     <div style="background-color: #401049;">
-                        <img src="./statics/images/newPage/D_03.png" alt="">
-                        <h6>安全可信数据交易</h6>
+                        <img src="../statics/images/newPage/D_03.png" alt="">
+                        <h6>Secure trusted data transactions</h6>
                         <section>
-                            点对点方式数据交易，从根本上避免了平台沉淀数据的可能性。应 用智能合约，数据透明公开定价，保证交易的公平性。 购买的数据由数据提供方用数据购买方的公钥加密传输，只有购买方的私钥才能解密， 22 从而避免数据泄露。平台上的数据都有唯一的签名，如果数据购买方对 数据进行转售， 收益会记入初始数据提供方。基于 智能合约和社区共识的数据评分机制。
+                            The point-to-point data transaction fundamentally avoids the possibility of data precipitation on the platform. Using smart contract, data transparent open pricing, to ensure the fairness of transactions. The purchased data is encrypted and transmitted
+                            by the data provider with the public key of the data purchaser, and only the private key of the purchaser can be decrypted, so as to avoid data leakage. The data on the platform has a unique signature. If the data buyer resells
+                            the data, the revenue will be recorded in the initial data provider. Data scoring mechanism based on smart contract and community consensus.
                         </section>
                     </div>
-                    <img src="./statics/images/newPage/6.png" alt="">
+                    <img src="../statics/images/newPage/6.png" alt="">
                 </li>
             </ul>
             <ul>
                 <li>
                     <div style="background-color: #e2e2e2;">
-                        <img src="./statics/images/newPage/D_01.png" alt="">
-                        <h6 style="color:#000"> 多维度大数据整合</h6>
-                        <section style="color:#797979">
-                            由海量垂直应用分别基于共识机制共享数据，形成大数据共享开放 平台，从而实现更完整、更精准的多维度数据画像。
+                        <img src="../statics/images/newPage/D_01.png" alt="">
+                        <h6 style="color:#000"> Multidimensional big data integration</h6>
+                        <section style="color:#797979; margin-top: 40px;">
+                            The massive vertical applications share data based on consensus mechanism, forming an open platform for big data sharing, so as to achieve a more complete and accurate multi-dimensional data portrait.
                         </section>
                     </div>
-                    <img src="./statics/images/newPage/4.png" alt="">
+                    <img src="../statics/images/newPage/4.png" alt="">
                 </li>
-                <!-- <li>
-                    <div style="background-color: #6e489a;">
-                        <img src="./statics/images/newPage/D_02.png" alt="">
-                        <h6> 数据可确权、可溯源</h6>
-                        <section>
-                            通过区块链的分布式账本，能够安全透明地记录所有数据上传、更 新、交易或使用行为，这些行为记录一经确认就不可被篡改，使得开放平 台上的所有数据具有可确权、可溯源的功能。 </section>
-                    </div>
-                    <img src="./statics/images/newPage/5.png" alt="">
-                </li> -->
                 <li>
                     <div style="background-color: #401049;">
-                        <img src="./statics/images/newPage/D_03.png" alt="">
-                        <h6>用户隐私保护与用户数据确权</h6>
+                        <img src="../statics/images/newPage/D_03.png" alt="">
+                        <h6>User privacy protection and user data confirmation</h6>
                         <section>
-                            使用统一数字身份对用户在网络上多个设备多个场景的不同身份 进行统一映射。可以用于用户数据的跨屏跨应用合并，及统一登录。 用户的个人数据完全由用户所有，用户完全掌握私钥，并由用户自 己决定向谁开放授权以及如何收费，全程可跟踪。
+                            Use unified digital identity to map different identities of users in multiple devices and scenarios on the network. It can be used for cross screen and cross application combination of user data and unified login. The user's personal data is completely
+                            owned by the user, and the user fully grasps the private key, and the user decides to whom to open the authorization and how to charge. The whole process can be tracked.
                         </section>
                     </div>
-                    <img src="./statics/images/newPage/6.png" alt="">
+                    <img src="../statics/images/newPage/6.png" alt="">
                 </li>
             </ul>
             <span></span><br><i></i>
@@ -570,28 +574,28 @@
 
         <!-- 轮播 -->
         <div class="run_box">
-            <h6 class="index_title" style="text-align: left;">布局 <span>03</span></h6>
+            <h6 class="index_title" style="text-align: left;">layout <span>03</span></h6>
             <!-- <p class="run_box_bg"><span></span></p> -->
-            <img src="statics/images/newPage/11_wap.png" alt="">
+            <img src="../statics/images/newPage/11_wap.png" alt="">
             <div>
                 <div class="swiper-container news_container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <!-- <a href="./article/detail-id=523.html"> -->
                             <a href="">
-                                <img src="./images/timg1.jpg" alt="">
+                                <img src="../images/timg1.jpg" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <!-- <a href="./article/detail-id=522.html"> -->
                             <a href="">
-                                <img src="./images/timg2.jpg" alt="">
+                                <img src="../images/timg2.jpg" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <!-- <a href="./article/detail-id=515.html"> -->
                             <a href="">
-                                <img src="./images/timg3.jpg" alt="">
+                                <img src="../images/timg3.jpg" alt="">
                             </a>
                         </div>
                     </div>
@@ -603,39 +607,39 @@
             </div>
         </div>
 
-        <img src="./statics/images/newPage/newbg.jpg" alt="" style="width:100%">
+        <img src="../statics/images/newPage/newbg.jpg" alt="" style="width:100%">
 
         <!-- team -->
         <div class="team">
             <h6 class="index_title" style="text-align: right;color: #a3a3a3;">TEAM <span>04</span></h6>
-            <img src="statics/images/newPage/7.png" alt="" class="leftTop">
+            <img src="../statics/images/newPage/7.png" alt="" class="leftTop">
             <div class="team_list">
                 <div class="swiper-container team_container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="team_item">
                                 <!-- <a href="site/team.html"></a> -->
-                                <img src="statics/images/1_03.png" alt="" class="header_pic">
+                                <img src="../statics/images/1_03.png" alt="" class="header_pic">
                                 <p class="name">约翰·查尔斯</p>
-                                <p class="info">塔克链团队发起人 </p>
+                                <p class="info">TAKLink team sponsor</p>
                             </div>
                         </div>
 
                         <div class="swiper-slide">
                             <div class="team_item">
                                 <!-- <a href="site/team.html"></a> -->
-                                <img src="statics/images/1_04.png" alt="" class="header_pic">
+                                <img src="../statics/images/1_04.png" alt="" class="header_pic">
                                 <p class="name">阿尔 · 丹尼列夫</p>
-                                <p class="info">技术工程师</p>
+                                <p class="info">Technical Engineer</p>
                             </div>
                         </div>
 
                         <div class="swiper-slide">
                             <div class="team_item">
                                 <!-- <a href="site/team.html"></a> -->
-                                <img src="statics/images/1_05.png" alt="" class="header_pic">
+                                <img src="../statics/images/1_05.png" alt="" class="header_pic">
                                 <p class="name">尼克拉维</p>
-                                <p class="info">核心算法工程师</p>
+                                <p class="info">Core algorithm engineer</p>
                             </div>
                         </div>
                     </div>
@@ -702,40 +706,42 @@
         <ul>
             <li>
                 <dl>
-                    <dt>联系我们 <i></i></dt>
+                    <dt>Contact us <i></i></dt>
                     <div class="Contact_us">
-                        <img src="./images/kf1.jpg" alt="" style="width: 50%;">
-                        <img src="./images/kf2.jpg" alt="" style="width: 50%;">
+                        <img src="../images/kf1.jpg" alt="" style="width: 50%;">
+                        <img src="../images/kf2.jpg" alt="" style="width: 50%;">
                         <!-- <a href="" target="_blank"><img src="statics/images/newPage/pc_13.png" alt=""></a> -->
                     </div>
                 </dl>
             </li>
             <li>
                 <dl>
-                    <dt>下载地址 <i></i></dt>
+                    <dt>Download address <i></i></dt>
                     <div class="Contact_us">
-                        <a href="https://fir.im/takwallet"><img src="./images/loading.png" alt="" style="width: 100%;"></a>
-                        <img src="./images/load.png" alt="" style="width: 50%;">
+                        <a href="https://fir.im/takwallet"><img src="../images/loading.png" alt="" style="width: 100%;"></a>
+                        <img src="../images/load.png" alt="" style="width: 50%;">
                         <!-- <a href="" target="_blank"><img src="statics/images/newPage/pc_13.png" alt=""></a> -->
                     </div>
                 </dl>
             </li>
             <li>
                 <dl>
-                    <dt>塔克链介绍<i></i></dt>
-                    <dd>全球物联网应用增长区势明显，万物互联时代开启。全球新一轮科 技革命和产业变革正在孕育兴起，信息通信技术以前所未有的速度转化为 现实生产力，深刻改变着全球经济格局、利益格局、安全格局。物联网作 为信息通信技术的典型代表，在全球范围内呈现加速发展的态势。
+                    <dt style="font-size: 26px;">TAKLink brief introduction<i></i></dt>
+                    <dd>The application growth area of the global Internet of things is obvious, and the era of Internet of things is open. A new round of global scientific and technological revolution and industrial transformation are emerging. Information
+                        and communication technology is transforming into real productivity at an unprecedented speed, profoundly changing the global economic pattern, interest pattern and security pattern. As a typical representative of information and
+                        communication technology, the Internet of things is developing rapidly all over the world.
                     </dd>
                 </dl>
             </li>
             <li>
                 <dl>
-                    <dt>白皮书 <i></i></dt>
-                    <dd><a style='color: #fff' href="./statics/塔克链白皮书.pdf">塔克链白皮书
+                    <dt>White Paper <i></i></dt>
+                    <dd><a style='color: #fff' href="../statics/塔克链白皮书.pdf">TAKLink White Paper
                         </a> </dd>
                 </dl>
             </li>
         </ul>
-        <img src="statics/images/newPage/top.png" alt="" class="backTop">
+        <img src="../statics/images/newPage/top.png" alt="" class="backTop">
     </footer>
 
     <!--    <audio id="bg_m" src="/statics/bg3.mp3" autoplay="auto" loop="loop">-->
@@ -757,24 +763,10 @@
             margin-right: 15px;
         }
     </style>
-    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="statics/js/swiper.min.js"></script>
+    <!-- <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+    <script src="../statics/js/swiper.min.js"></script>
     <script type="text/javascript">
         var play_status = 1;
-        $('#music_btn').click(function() {
-            if (play_status == 1) {
-                play_status = 2;
-                //
-                document.getElementById("bg_m").pause();
-                $('#music_btn').attr('src', '/statics/images/bg_m_stop.png');
-            } else {
-
-                play_status = 1;
-                //
-                document.getElementById("bg_m").play();
-                $('#music_btn').attr('src', '/statics/images/bg_m_play.png');
-            }
-        });
         //轮播
         var mySwiper = new Swiper('.index_banner', {
             autoplay: true,
@@ -805,7 +797,7 @@
     <!-- <div style="display: none">
         <script src="./statics/php/z_stat.php" language="JavaScript"></script>
     </div> -->
-    <script src="statics/js/main.js"></script>
+    <script src="../statics/js/main.js"></script>
 </body>
 
 </html>
