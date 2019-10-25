@@ -637,7 +637,7 @@ footer .footer_top p {
 /* 椤靛簳 */
 
 footer {
-    height: 8.20rem;
+    /* height: 8.20rem; */
     width: 7.50rem;
     background: #000000;
     display: flex;
